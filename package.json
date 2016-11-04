@@ -1,0 +1,16 @@
+{
+  "name": "Tabulator",
+  "version": "0.1",
+  "description": "Tabulator for latavel",
+  "main": "index.js",
+  "repository": {
+    "url": "https://shawnsandy@github.com/shawnsandy/tabulator.git",
+    "type": "git"
+  },
+  "author": "shawn sandy",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "jquery.tabulator": "^2.7.0"
+  }
+}
