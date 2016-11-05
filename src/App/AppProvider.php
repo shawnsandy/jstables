@@ -6,7 +6,7 @@
  * Time: 12:50 PM
  */
 
-namespace ShawnSandy\Tabulator\App;
+namespace ShawnSandy\Jstables\App;
 
 use Illuminate\Support\ServiceProvider ;
 

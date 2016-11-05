@@ -3,7 +3,7 @@
  * Deprecated use The /Provider.php in its place
  */
 
-namespace ShawnSandy\Tabulator;
+namespace ShawnSandy\Jstables;
 
 use Illuminate\Support\ServiceProvider ;
 

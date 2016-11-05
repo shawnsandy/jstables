@@ -1,12 +1,12 @@
 {
-    "name": "shawnsandy/tabulator",
+    "name": "shawnsandy/jstables",
     "type": "library",
     "description": "Start Kit for laravel packages",
     "keywords": [
         "ShawnSandy",
-        "Tabulator"
+        "Jstables"
     ],
-    "homepage": "https://github.com/ShawnSandy/Tabulator",
+    "homepage": "https://github.com/ShawnSandy/Jstables",
     "license": "MIT",
     "authors": [
         {
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ShawnSandy\\Tabulator\\": "src"
+            "ShawnSandy\\Jstables\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ShawnSandy\\Tabulator\\": "tests"
+            "ShawnSandy\\Jstables\\": "tests"
         }
     },
     "scripts": {

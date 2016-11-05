@@ -1,6 +1,6 @@
 <?php
 
-namespace ShawnSandy\Tabulator;
+namespace ShawnSandy\Jstables;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -9,7 +9,7 @@ use Illuminate\Support\ServiceProvider;
  *
  * @package ShawnSandy\PkgStart
  */
-class TabulatorServiceProvider extends ServiceProvider
+class JstablesServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
@@ -25,19 +25,19 @@ class TabulatorServiceProvider extends ServiceProvider
         /**
          * Package views
          */
-        $this->loadViewsFrom(__DIR__ . '/resources/views', 'tabulator');
+        $this->loadViewsFrom(__DIR__ . '/resources/views', 'jstables');
         $this->publishes(
             [
-                __DIR__ . '/resources/views' => resource_path('views/vendor/tabulator'),
-            ], 'tabulator-views'
+                __DIR__ . '/resources/views' => resource_path('views/vendor/jstables'),
+            ], 'jstables-views'
         );
 
         /**
          * Package config
          */
         $this->publishes(
-            [__DIR__ . '/config/tabulator.php' => config_path('tabulator.php')],
-            'tabulator-config'
+            [__DIR__ . '/config/jstables.php' => config_path('jstables.php')],
+            'jstables-config'
         );
 
         if (!$this->app->runningInConsole()) :
