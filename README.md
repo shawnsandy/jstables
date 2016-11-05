@@ -1,13 +1,8 @@
-# tabulator
+# JsTables
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
-
-**Note:** Replace ```Shawn Sandy``` ```shawnsandy``` ```http://github.com/shawnsandy``` ```shansandy04@gmail.com``` ```shawnsandy``` ```tabulator``` ```Tabulator for laravel``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line. You can run `$ php prefill.php` in the command line to make all replacements at once. Delete the file prefill.php as well.
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
 PSRs you support to avoid any confusion with users and contributors.
@@ -17,7 +12,7 @@ PSRs you support to avoid any confusion with users and contributors.
 Via Composer
 
 ``` bash
-$ composer require shawnsandy/tabulator
+$ composer require shawnsandy/jstables
 ```
 
 ## Usage
@@ -53,17 +48,17 @@ If you discover any security related issues, please email shansandy04@gmail.com 
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/shawnsandy/tabulator.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/shawnsandy/jstables.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/shawnsandy/tabulator/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/shawnsandy/tabulator.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/shawnsandy/tabulator.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/shawnsandy/tabulator.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/shawnsandy/jstables/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/shawnsandy/jstables.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/shawnsandy/jstables.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/shawnsandy/jstables.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/shawnsandy/tabulator
-[link-travis]: https://travis-ci.org/shawnsandy/tabulator
-[link-scrutinizer]: https://scrutinizer-ci.com/g/shawnsandy/tabulator/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/shawnsandy/tabulator
-[link-downloads]: https://packagist.org/packages/shawnsandy/tabulator
+[link-packagist]: https://packagist.org/packages/shawnsandy/jstables
+[link-travis]: https://travis-ci.org/shawnsandy/jstables
+[link-scrutinizer]: https://scrutinizer-ci.com/g/shawnsandy/jstables/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/shawnsandy/jstables
+[link-downloads]: https://packagist.org/packages/shawnsandy/jstables
 [link-author]: https://github.com/shawnsandy
 
