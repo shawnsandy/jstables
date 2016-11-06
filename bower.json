@@ -1,0 +1,30 @@
+{
+  "name": "Tabulator",
+  "description": "Tabulator for latavel",
+  "main": "index.js",
+  "authors": [
+    "shawn sandy"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "DataTables",
+    "Dynamic",
+    "Tables"
+  ],
+  "homepage": "https://github.com/shawnsandy/jstables",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jsgrid": "js-grid#^1.5.2"
+  }
+}
