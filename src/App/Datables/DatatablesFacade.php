@@ -10,5 +10,15 @@ use Illuminate\Support\Facades\Facade;
  */
 class DatatablesFacade extends Facade 
 {
+    /**
+     * Facade
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor()
+    {
+       return 'Datatables';
+    }
+
 
 }
