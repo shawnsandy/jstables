@@ -37,6 +37,10 @@ class DatatablesServiceProvider extends ServiceProvider
             __DIR__ . '../../public/datatables' => public_path('vendors/datatables')
         ], 'datatables-assets');
 
+        if (!$this->app->runningInConsole()) :
+            include_once __DIR__ . 'helpers.php';
+        endif;
+
 
     }
 

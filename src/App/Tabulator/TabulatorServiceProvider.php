@@ -37,6 +37,10 @@ class TabulatorServiceProvider extends ServiceProvider
             __DIR__ . '../../public/tabulator' => public_path('vendors/tabulator')
         ], 'tabulator_assets');
 
+        if (!$this->app->runningInConsole()) :
+            include_once __DIR__ . '/helpers.php';
+        endif;
+
 
     }
 

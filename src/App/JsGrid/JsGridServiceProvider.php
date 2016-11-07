@@ -36,6 +36,10 @@ class JsGridServiceProvider extends ServiceProvider
             __DIR__ . '../../public/jsgrid' => public_path('vendors/jsgrid')
         ], 'jsgrid-assets');
 
+        if (!$this->app->runningInConsole()) :
+            include_once __DIR__ . 'helpers.php';
+        endif;
+
 
     }
 

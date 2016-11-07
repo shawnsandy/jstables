@@ -26,12 +26,7 @@ class JstablesServiceProvider extends ServiceProvider
          * Package views
          */
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'jstables');
-        $this->publishes(
-            [
-                __DIR__ . '/resources/views' => resource_path('views/vendor/jstables'),
-            ], 'jstables-views'
-        );
-
+     
         /**
          * Package config
          */
