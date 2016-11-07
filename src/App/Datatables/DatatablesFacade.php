@@ -1,6 +1,6 @@
 <?php
 
-namespace ShawnSandy\Jstables\App;
+namespace ShawnSandy\Jstables\App\Datatables;
 use Illuminate\Support\Facades\Facade;
 
 /**

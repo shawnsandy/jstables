@@ -1,6 +1,7 @@
 <?php
 
 namespace ShawnSandy\Jstables\App\JsGrid;
+
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -8,22 +9,23 @@ use Illuminate\Support\ServiceProvider;
  *
  * @package \ShawnSandy\Jstables\App\JsGrid
  */
-class JsGridServiceProvider extends ServiceProvider 
+class JsGridServiceProvider extends ServiceProvider
 {
 
     /**
      * Post registration services
      *
      */
-    public function boot(){
+    public function boot()
+    {
 
         /**
          * publish views
          */
-        $this->loadViewsFrom(__DIR__.'../resources/views/', 'jsgrid');
+        $this->loadViewsFrom(__DIR__ . '../resources/views/', 'jsgrid');
 
         $this->publishes([
-            __DIR__.'../resources/views/jsgrid/' => resource_path('views/vendor/js-grid/jsgrid'),
+            __DIR__ . '../resources/views/jsgrid/' => resource_path('views/vendor/js-grid/jsgrid'),
 
         ], 'jsgrid-views');
 
@@ -31,9 +33,23 @@ class JsGridServiceProvider extends ServiceProvider
          * publish assets
          */
         $this->publishes([
-            __DIR__.'../../public/jsgrid' => public_path('vendors/jsgrid')
+            __DIR__ . '../../public/jsgrid' => public_path('vendors/jsgrid')
         ], 'jsgrid-assets');
 
+
+    }
+
+    public function register()
+    {
+
+        $this->mergeConfigFrom(
+            __DIR__ . 'App/config/config.php', 'jsgrid'
+        );
+        $this->app->bind(
+            'JsGrid', function () {
+            return new JsGrid();
+        }
+        );
 
     }
 
