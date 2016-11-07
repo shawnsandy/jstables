@@ -46,9 +46,6 @@ class JsGridServiceProvider extends ServiceProvider
     public function register()
     {
 
-        $this->mergeConfigFrom(
-            __DIR__ . 'App/config/config.php', 'jsgrid'
-        );
         $this->app->bind(
             'JsGrid', function () {
             return new JsGrid();

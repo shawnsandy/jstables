@@ -48,9 +48,6 @@ class DatatablesServiceProvider extends ServiceProvider
     public function register()
     {
 
-        $this->mergeConfigFrom(
-            __DIR__ . 'App/config/config.php', 'datatables'
-        );
         $this->app->bind(
             'Datatables', function () {
             return new Datatables();

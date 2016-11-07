@@ -35,7 +35,7 @@ class TabulatorServiceProvider extends ServiceProvider
          */
         $this->publishes([
             __DIR__ . '../../public/tabulator' => public_path('vendors/tabulator')
-        ], 'tabulator_assets');
+        ], 'tabulator-assets');
 
         if (!$this->app->runningInConsole()) :
             include_once __DIR__ . '/helpers.php';
@@ -51,9 +51,6 @@ class TabulatorServiceProvider extends ServiceProvider
     public function register()
     {
 
-        $this->mergeConfigFrom(
-            __DIR__ . 'App/config/config.php', 'tabulator'
-        );
         $this->app->bind(
             'Tabulator', function () {
             return new Tabulator();
