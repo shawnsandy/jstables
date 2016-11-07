@@ -37,7 +37,7 @@ class JsGridServiceProvider extends ServiceProvider
         ], 'jsgrid-assets');
 
         if (!$this->app->runningInConsole()) :
-            include_once __DIR__ . 'helpers.php';
+            include_once __DIR__ . '/helpers.php';
         endif;
 
 
