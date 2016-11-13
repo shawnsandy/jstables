@@ -23,11 +23,10 @@ class DatatablesServiceProvider extends ServiceProvider
         /**
          * publish views
          */
-        $this->loadViewsFrom(__DIR__ . '../resources/views/', 'datatables');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views/datatables/', 'datatables');
 
         $this->publishes([
             __DIR__ . '../resources/views/datatables/' => resource_path('views/vendor/js-grid/datatables'),
-
         ], 'datatables-views');
 
         /**

@@ -15,19 +15,20 @@ class Datatables
      * Create table columns names
      *
      * @param array $columns
-     * @return static
+     * @return mixed
      */
-    public function createTableColumns($columns = [])
+    public function createColumns($columns = [])
     {
 
         $cols = collect($columns);
 
-        $cols->map(function ($name) {
+        $names = $cols->flatten();
+
+        $data = $names->map(function ($name) {
             return ['data' => $name];
         });
 
-        return $cols;
-
+        return $data;
     }
 
     public function css($src = '')
@@ -45,5 +46,6 @@ class Datatables
 
         return "<script src=\"//{$src}\"></script>";
     }
+
 
 }
