@@ -22,10 +22,10 @@ class JsGridServiceProvider extends ServiceProvider
         /**
          * publish views
          */
-        $this->loadViewsFrom(__DIR__ . '../resources/views/', 'jsgrid');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views/', 'jsgrid');
 
         $this->publishes([
-            __DIR__ . '../resources/views/jsgrid/' => resource_path('views/vendor/js-grid/jsgrid'),
+            __DIR__ . '/../resources/views/jsgrid/' => resource_path('views/vendor/js-grid/jsgrid'),
 
         ], 'jsgrid-views');
 
@@ -33,7 +33,7 @@ class JsGridServiceProvider extends ServiceProvider
          * publish assets
          */
         $this->publishes([
-            __DIR__ . '../../public/jsgrid' => public_path('vendors/jsgrid')
+            __DIR__ . '../../../bower_components/jsgrid/dist/' => public_path('vendors/jsgrid')
         ], 'jsgrid-assets');
 
         if (!$this->app->runningInConsole()) :

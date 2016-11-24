@@ -31,7 +31,7 @@ class Datatables
         return $data;
     }
 
-    public function css($src = '')
+    public function styles($src = '')
     {
         if (empty($src))
             $src = 'cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css';
