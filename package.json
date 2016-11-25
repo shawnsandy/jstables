@@ -10,6 +10,7 @@
   "author": "shawn sandy",
   "license": "MIT",
   "dependencies": {
+    "RWD-Table-Patterns": "^5.1.0",
     "gulp": "^3.9.1",
     "jquery.tabulator": "^2.7.0"
   }
