@@ -1,31 +1,25 @@
 @php
 
-    $countries = [
-        ['Name' => "", 'Id' => 0],
-        ['Name' => "United States", 'Id' => 1],
-        ['Name' => "Canada", 'Id' => 2],
-        ['Name' => "United Kingdom", 'Id' => 3]
-        ];
+    $fields = [
+    ['name' => 'Name', 'type' => 'text', 'width' => 150, 'validate' => 'required'],
+    ['name' => 'Age', 'type' => 'number', 'width' => 50,],
+    ['name' => 'Address', 'type' => 'text', 'width' => 200,],
+    ['name' => 'Country', 'type' => 'select', 'align' => 'left', 'valueField' => 'Id', 'textField' => 'Name', 'items' => [
+    ['Name' => "", 'Id' => 0],
+    ['Name' => "United States", 'Id' => 1],
+    ['Name' => "Canada", 'Id' => 2],
+    ['Name' => "United Kingdom", 'Id' => 3]
+    ]
+    ],
+    ['name' => 'Married', 'type' => 'checkbox', 'title' => 'Is Married', 'sorting' => FALSE],
+    ['type' => 'control'],
+    ];
 
-        $fields = [
-        ['name' => 'Name', 'type' => 'text', 'width' => 150, 'validate' => 'required'],
-        ['name' => 'Age', 'type' => 'number', 'width' => 50,],
-        ['name' => 'Address', 'type' => 'text', 'width' => 200,],
-        ['name' => 'Country', 'type' => 'select', 'valueField' => 'Id', 'textField' => 'Name', 'items' => [
-        ['Name' => "", 'Id' => 0],
-        ['Name' => "United States", 'Id' => 1],
-        ['Name' => "Canada", 'Id' => 2],
-        ['Name' => "United Kingdom", 'Id' => 3]
-        ]
-        ],
-        ['name' => 'Married', 'type' => 'checkbox', 'title' => 'Is Married', 'sorting' => false],
-        ['type' => 'control'],
-        ];
-
-        dump(json_encode($fields));
 
 @endphp
+
 <script>
+
     var clients = [
         {"Name": "Otto Clay", "Age": 25, "Country": 1, "Address": "Ap #897-1459 Quam Avenue", "Married": false},
         {"Name": "Connor Johnston", "Age": 45, "Country": 2, "Address": "Ap #370-4647 Dis Av.", "Married": true},
@@ -43,14 +37,15 @@
     $("{{ $selector or "#jsGrid" }}").jsGrid({
         width: "100%",
         height: "400px",
+        inserting: true,
+        editing: false,
+        sorting: true,
+        paging: true,
 
-        inserting: {{ $inserting or 0 }},
-        editing: {{ $editing or 0 }},
-        sorting: {{ $sorting or 1 }},
-        paging: {{ $paging or 1 }},
 
         data: clients,
 
         fields: {!! json_encode($fields) !!}
     });
+
 </script>
