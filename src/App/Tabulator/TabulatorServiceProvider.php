@@ -34,7 +34,7 @@ class TabulatorServiceProvider extends ServiceProvider
          * publish assets
          */
         $this->publishes([
-            __DIR__ . '../../public/tabulator' => public_path('vendors/tabulator')
+            __DIR__ . '../../public/tabulator' => public_path('assets/tabulator')
         ], 'tabulator-assets');
 
         if (!$this->app->runningInConsole()) :

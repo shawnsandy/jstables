@@ -33,7 +33,7 @@ class DatatablesServiceProvider extends ServiceProvider
          * publish assets
          */
         $this->publishes([
-            __DIR__ . '../../public/datatables' => public_path('vendors/datatables')
+            __DIR__ . '../../public/datatables' => public_path('assets/datatables')
         ], 'datatables-assets');
 
         if (!$this->app->runningInConsole()) :

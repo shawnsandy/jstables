@@ -33,7 +33,7 @@ class JsGridServiceProvider extends ServiceProvider
          * publish assets
          */
         $this->publishes([
-            __DIR__ . '../../../bower_components/jsgrid/dist/' => public_path('vendors/jsgrid')
+            __DIR__ . '../../../bower_components/jsgrid/dist/' => public_path('assets/jsgrid')
         ], 'jsgrid-assets');
 
         if (!$this->app->runningInConsole()) :
